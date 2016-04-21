@@ -23,8 +23,7 @@ denomination_index = 0
 	if (change_total != amount) {
 		raise ChangeError
 	}
-}
-```
+}```
 
 #Fancier Stuff
 
