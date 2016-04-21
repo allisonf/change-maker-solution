@@ -1,6 +1,6 @@
 #Plain-English Algorithm
 
-I've worked as a cashier enough to know the algorithm for making change with American money denominations:
+I've worked as a cashier enough times to have discovered the algorithm for making change with American money denominations:
 
 _Imprecise Algorithm Description_
 > Make as much change with higher denominations first. When you can't get any closer
