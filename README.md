@@ -37,10 +37,28 @@ I realized there was a flat_map function and that it would solve my problem if m
 
 While learning about Ruby higher-order functions, I temporarily overlooked the inherent difficulty with coding this in a functional style: each iteration is not independent of the previous.
 
-#Recursion: The solution
+#The solution: Recursion
 
 As soon as I realized why higher-order functions were a bad idea (they would require globals or C++ style pass-by-reference, which it seemed Ruby didn't have), I realized I could use recursion.
 
 A tail recursive solution may fill up the stack, but it also can be memo-ized.
 
 My final solution is the tail-recursive approach.
+
+#The Results: 6 examples, 1 failure
+
+Why one failure?
+
+Difficult Math!
+
+My algorithm works for American money denominations. American denominations have a convenient property:
+
+```
+For each denomonitaion d(i), the ith smallest denomination, 2 * d(i - 1) < d(i)
+```
+
+What this means is that you can't run into the problem where you can use a smaller set of coins by not using my greedy algorithm.
+
+Test case #5 gives a denomination set that breaks this property, and thus, my algorithm.
+
+A general-purpose solution is possible and I am thinking about it, but I am submitting the code I was able to complete in 2.5 hours and am able to discuss the failing test case.
