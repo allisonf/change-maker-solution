@@ -41,7 +41,7 @@ While learning about Ruby higher-order functions, I temporarily overlooked the i
 
 As soon as I realized why higher-order functions were a bad idea (they would require globals or C++ style pass-by-reference, which it seemed Ruby didn't have), I realized I could use recursion.
 
-A tail recursive solution may fill up the stack, but it also can be memo-ized.
+A tail recursive solution won't fill up the stack with a properly optimized compiler and it also can be memo-ized.
 
 My final solution is the tail-recursive approach.
 
