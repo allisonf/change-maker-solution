@@ -2,7 +2,7 @@
 
 I've worked as a cashier enough times to have discovered the algorithm for making change with American money denominations:
 
-_Imprecise Algorithm Description_
+###Imprecise Algorithm Description
 > Make as much change with higher denominations first. When you can't get any closer
 without going over, move to the next largest denomination.
 
