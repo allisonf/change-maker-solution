@@ -3,14 +3,15 @@
 I've worked as a cashier enough to know the algorithm for making change with American money denominations:
 
 _Imprecise Algorithm Description_
-> "Make as much change with higher denominations first. When you can't get any closer
-without going over, move to the next largest denomination"
+> Make as much change with higher denominations first. When you can't get any closer
+without going over, move to the next largest denomination.
 
 #Initial Pseudo-Code solution
 
 I first tried a straight-forward approach. I've written a partial solution in a Groovy/Ruby hybrid:
 
-`change_array = []
+```groovy
+change_array = []
 change_total = 0
 denomination_index = 0
 	while (change_total < amount && denomination_index < denomination.size()) {
@@ -23,7 +24,8 @@ denomination_index = 0
 	if (change_total != amount) {
 		raise ChangeError
 	}
-}`
+}
+```
 
 #Fancier Stuff
 
