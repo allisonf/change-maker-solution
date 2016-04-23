@@ -111,7 +111,8 @@ class ChangeMaker
 
     if recursive_amount < 0
       # base case
-      return nil
+      # If this happens, our algorithm has made an error and we want to know about it
+      raise ChangeMakerAlgorithmError
     elsif recursive_amount == 0
       # base case
       return change_array
@@ -152,3 +153,5 @@ end
 
 
 class ChangeError < StandardError; end
+
+class ChangeMakerAlgorithmError < StandardError; end
